@@ -61,6 +61,7 @@ mclapply(names(mouseMarkerGenes$Cortex), function(marker_list){
   p1 = plotMarkers(mouseMarkerGenes$Cortex[marker_list] %>% unlist %>% as.character() , mouse_genes = T)
   fn = paste0('~/human_marker_genes/plots/neuroexpresso_markers/', cell_type_name, '.png')
   save_plot(filename = fn, plot = p1, base_width = 8)
+  dev.off()
 }, mc.cores = 20)
 
 plot_base_dir = '~/human_marker_genes/plots/human_derived_markers/'
@@ -71,4 +72,5 @@ mclapply(allen_human_subclass_names, function(marker_list){
   p1 = plotMarkers(subclass_cluster_markers[[cell_type_name]])
   fn = paste0('~/human_marker_genes/plots/human_derived_markers/', cell_type_name, '.png')
   save_plot(filename = fn, plot = p1, base_width = 8)
+  dev.off()
 }, mc.cores = 20)
