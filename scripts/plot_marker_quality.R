@@ -48,7 +48,7 @@ plotMarkers = function(gene_list, mouse_genes = F){
                         genes = intersecting_genes, 
                         grouping = "subclass", 
                         log_scale = FALSE,
-                        font_size = 6,
+                        font_size = 8,
                         rotate_counts = F)
   return(plot)
   
