@@ -1,2 +1,2 @@
 # human_marker_genes
-testing marker genes using hodge et al 2019 human nucseq data
+testing neuroexpresso cell type marker genes and deriving new human-based genes using hodge et al 2019 human nucseq data
