@@ -15,6 +15,7 @@ data("mouseMarkerGenes")
 use_genes = intersect(tasic_2016_genes, make.names(new_pvalb_markers))
 
 # use_genes = new_pvalb_markers
+use_genes = new_marker_list$PVALB
 data_df <- cbind(sample_name = colnames(data),
                  as.data.frame(t(data[use_genes,])))
 

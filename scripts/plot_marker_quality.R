@@ -27,6 +27,8 @@ allen_human_subclass_names = allen_human_subclass_names[allen_human_subclass_nam
 subclass_cluster_markers = readRDS(file= paste0(allen_human_data_output_dir, 'derived_human_subclass_markers.rds'))
 data("mouseMarkerGenes")
 
+ogan_markers = readRDS(file = '/external/rprshnas01/netdata_kcni/stlab/marker_genes/human_markers_quick_sel.rds')
+
 
 plotMarkers = function(gene_list, mouse_genes = F){
   new_gene_list = gene_list
